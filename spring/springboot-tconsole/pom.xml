@@ -17,7 +17,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <hasor.version>4.2.3</hasor.version>
+        <hasor.version>4.2.5</hasor.version>
     </properties>
 
     <build>
@@ -25,6 +25,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF8</encoding>
+                </configuration>
             </plugin>
         </plugins>
     </build>
